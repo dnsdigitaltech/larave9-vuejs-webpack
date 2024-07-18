@@ -8,8 +8,7 @@
     </head>
     <body >
         <div id="app">
-            <h1>Menu</h1>
-            <router-view></router-view>
+            <main-app></main-app>
         </div>
     </body>
     <script src="{{mix('/js/app.js')}}"></script>
