@@ -1,3 +1,11 @@
-require(__dirname + '/node_modules/laravel-mix/src/index');
-Mix.paths.setRootPath( path.resolve(__dirname) );
-require(Mix.paths.mix());
+const createExpoWebpackConfigAsync = require('@expo/webpack-config');
+
+module.exports = async function(env, argv) {
+    const config = await createExpoWebpackConfigAsync({
+        ...env,
+        babel: {
+            dangerouslyAddModulePathsToTranspile: ['@ui-kitten/components']
+        }
+    }, argv);
+    return config;
+};

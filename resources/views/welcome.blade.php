@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Full stack blog</title>
     </head>
     <body >
         <div id="app">
-            <mainapp></mainapp>
+            <h1>Menu</h1>
+            <router-view></router-view>
         </div>
     </body>
     <script src="{{mix('/js/app.js')}}"></script>
