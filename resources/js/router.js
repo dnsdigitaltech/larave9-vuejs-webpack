@@ -9,10 +9,13 @@ import hooks from './components/pages/basic/hooks'
 import methods from './components/pages/basic/methods'
 
 const routes = [
+    //projects routes
     {
         path: '/minha-nova-rota',
         component: firstPage
     },
+
+    //basic tutorials routes
     {
         path: '/nova-rota',
         component: newRoutePage
