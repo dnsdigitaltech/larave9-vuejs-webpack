@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +18,9 @@ Route::any('/', function(){
 
 
 
-Route::get('/new', [App\Http\Controllers\TestController::class, 'controllerMethod']);
+Route::post('/app/create_tag', [TestController::class, 'teste']);
+
+Route::get('/new', [TestController::class, 'controllerMethod']);
 
 Route::any('/{slug}', function(){
     return view('welcome');

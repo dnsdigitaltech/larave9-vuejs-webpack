@@ -18,4 +18,11 @@ class TestController extends Controller
             'msg' => 'qui é um retorno'
         ]);
     }
+
+    public function teste()
+    {
+        return response()->json([
+            'msg' => 'apenas um erro encontrado'
+        ], 422);
+    }
 }
