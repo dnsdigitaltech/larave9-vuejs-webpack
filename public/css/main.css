@@ -447,7 +447,7 @@ p {
       align-items: center;
       height: 55px;
       width: 100%;
-      z-index: 11111;
+      z-index: 1;
       top: 0px;
       left: 0px;
       background: #fff;
@@ -3131,4 +3131,84 @@ p {
 }
 .center_button{
   margin-top: 10px;
+}
+
+.ivu-modal-wrap {
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 4 !important;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  background: #00000030;
+}
+
+.ivu-modal {
+  width: auto;
+  position: relative;
+  outline: 0;
+  top: 100px;
+  background: #fff;
+  margin: 20px;
+}
+
+.ivu-modal-content {
+  position: relative;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+  padding: 10px;
+}
+
+.ivu-modal-header {
+  line-height: 1;
+  padding: 10px;
+  background: #e2e2e2;
+}
+.ivu-modal-header p, .ivu-modal-header-inner {
+  display: inline-block;
+  width: 95% !important;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #17233d;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ivu-modal-close {
+  z-index: 1;
+  font-size: 10px;
+  position: relative !important;
+  top: 0;
+  overflow: hidden;
+  float: right;
+}
+
+.ivu-modal-footer{
+  display: none;
+}
+.ivu-notice-notice-content{
+  background-color: #f8d5b4dc !important;
+  padding: 10px;
+}
+.ivu-notice-icon-error{
+  display: none;
+}
+.ivu-notice-content-with-icon{
+  display: none;
+}
+.ivu-notice-notice-close{
+  display: none;
+}
+.footer-modificado{
+  margin-top:10px ;
+}
+
+input{
+  margin: 5px;
+  padding: 5px;
+  width: 97%;
+  border: 1px #acc4c1 solid;
 }
